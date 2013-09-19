@@ -27,10 +27,10 @@ class htmlencodeCommand(sublime_plugin.TextCommand):
 			for region in view.sel():
 				if not region.empty():
 					s = view.substr(region)
-					s =	s.replace('<','&lt;').replace('>','&gt;').replace('"','&quot;').replace('\r','').replace('\n','')
+					s =	s.replace('<','&lt;').replace('>','&gt;').replace('"','&quot;').replace('\r','').replace('\n','').replace('\t','')
 					view.replace(edit, region,s)
 		else:
 			alltextreg = sublime.Region(0, view.size())
 			s = view.substr(alltextreg)
-			s =	s.replace('<','&lt;').replace('>','&gt;').replace('"','&quot;').replace('\r','').replace('\n','')
+			s =	s.replace('<','&lt;').replace('>','&gt;').replace('"','&quot;').replace('\r','').replace('\n','').replace('\t','')
 			view.replace(edit, alltextreg, s)
