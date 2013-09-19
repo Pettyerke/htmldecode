@@ -1,4 +1,4 @@
 [
 	{ "keys": ["ctrl+h", "ctrl+e"], "command": "htmlencode" },
-	{ "keys": ["ctrl+h", "ctrl+d"], "command": "htmldecode" },
+	{ "keys": ["ctrl+h", "ctrl+d"], "command": "htmldecode" }
 ]
